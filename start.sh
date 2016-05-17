@@ -10,7 +10,9 @@ else
 fi
 
 if [ -f /home/git/repositories/gitolite-configured ]; then
-  su git -c "/home/git/bin/gitolite setup"
+  echo "Replace the admin ssh key.\n"
+  echo $SSH_KEY > /home/git/admin.pub
+  su git -c "/home/git/bin/gitolite setup -pk=/home/git/admin.pub"
 else
   # handle the ssh key
   if [ -n "$SSH_KEY" ]; then
