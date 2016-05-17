@@ -8,7 +8,7 @@
 #    docker run -d --name gitolite -p 22022:22 -v /var/data/git:/home/git/repositories -e SSH_KEY="$(cat ~/.ssh/id_rsa.pub)"  gitolite
 
 FROM ubuntu
-MAINTAINER Beta CZ <hlj8080@gmail.com>
+MAINTAINER Tercio de Melo <terciodemelo@gmail.com>
 
 # install requirements
 RUN apt-get update

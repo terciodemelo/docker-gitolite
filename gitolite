@@ -3,10 +3,11 @@
 #####################################################
 # Shell script for gitolite container.
 # Author: Beta CZ <hlj8080@gmail.com>
+# Maintainer: Tercio de Melo <terciodemelo@gmail.com>
 #####################################################
 
 # configure variables, modify them to suit your situation.
-IMAGE_NAME=${IMAGE_NAME:-"betacz/gitolite"}
+IMAGE_NAME=${IMAGE_NAME:-"terciodemelo/gitolite"}
 CONTAINER_NAME=${CONTAINER_NAME:-gitolite-server}
 PORT=${PORT:-2222}
 GIT_DATA_PATH=${GIT_DATA_PATH:-/opt/git}

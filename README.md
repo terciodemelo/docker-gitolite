@@ -5,13 +5,13 @@ There are two methods to run this image.
 
 1. Use `docker run` directly. Example:
 
-        $ docker run -d -p 2222:22 --name gitolite -e SSH_KEY="$(cat  ~/.ssh/id_rsa.pub)"  -v /path/to/git/data:/home/git/repositories  betacz/gitolite
+        $ docker run -d -p 2222:22 --name gitolite -e SSH_KEY="$(cat  ~/.ssh/id_rsa.pub)"  -v /path/to/git/data:/home/git/repositories  terciodemelo/gitolite
 		
 2. Use the `gitolite` script from the [GitHub Project](//github.com/hlj/docker-gitolite/blob/master/gitolite).
 
 	This script contains the following variables. You can change them by modifying this file or by use the environment variable to override.
 	
-        IMAGE_NAME			default: "betacz/gitolite"
+        IMAGE_NAME			default: "terciodemelo/gitolite"
         CONTAINER_NAME  	default: "gitolite-server"
         PORT                default: "2222"
         GIT_DATA_PATH       default: "/opt/git"
