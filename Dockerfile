@@ -12,7 +12,7 @@ MAINTAINER Tercio de Melo <terciodemelo@gmail.com>
 
 # install requirements
 RUN apt-get update
-RUN apt-get install -y git perl openssh-server
+RUN apt-get install -y git perl openssh-server python
 
 # create 'git' user
 RUN useradd git -m
