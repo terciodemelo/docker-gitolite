@@ -13,6 +13,7 @@ MAINTAINER Tercio de Melo <terciodemelo@gmail.com>
 # install requirements
 RUN apt-get update
 RUN apt-get install -y git perl openssh-server python
+RUN env | grep '_PORT_.*_TCP' | awk '{print "export " $1}' > /etc/environment
 
 # create 'git' user
 RUN useradd git -m
