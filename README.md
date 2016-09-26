@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/terciodemelo/gitolite.svg)](https://microbadger.com/images/terciodemelo/gitolite "Get your own image badge on microbadger.com")
+
 #Gitolite on docker
 
 ## How to run
