@@ -9,7 +9,7 @@ There are two methods to run this image.
 
         $ docker run -d -p 2222:22 --name gitolite -e SSH_KEY="$(cat  ~/.ssh/id_rsa.pub)"  -v /path/to/git/data:/home/git/repositories  terciodemelo/gitolite
 		
-2. Use the `gitolite` script from the [GitHub Project](//github.com/hlj/docker-gitolite/blob/master/gitolite).
+2. Use the `gitolite` script from the [GitHub Project](https://github.com/terciodemelo/docker-gitolite).
 
 	This script contains the following variables. You can change them by modifying this file or by use the environment variable to override.
 	
